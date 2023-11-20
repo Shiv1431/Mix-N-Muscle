@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.6); 
+    opacity: 1;
+    background: #e9dcc9;
+}
+h1{
+    text-align: center;
+}
+
+#cartItems {
+    margin: 20px auto;
+    width: 50%;
+    background-size: 400px;
+    padding: 20px; 
+    border: 2px solid #000; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.totalPrice {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.deleteButton {
+    background-color: #f44336;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.deleteButton:hover, .payButton:hover {
+    opacity: 0.8;
+}
+
+.deleteIcon {
+    color: #f44336;
+    cursor: pointer;
+}

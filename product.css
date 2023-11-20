@@ -1,0 +1,299 @@
+:root {
+  --green: #11a44f;
+  --orange: #d98332;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-family: cursive;
+}
+
+*::selection {
+  background: var(--orange);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  background: #e9dcc9;
+}
+
+html::-webkit-scrollbar {
+  width: 1.5rem;
+  height: 1.5rem !important;
+}
+
+html::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: black; 
+  height: 1rem !important;
+}
+
+.heading{
+  text-align: center;
+  padding:1rem;
+  color: var(--green);
+  font-size: 3.5rem;
+}
+
+header{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2rem 7%;
+  background:black;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 1000;
+}
+
+header .navbar a {
+  font-size: 2rem;
+  color: #aaa;
+  margin-left: 3rem;
+  transition: transform 0.3s ease;
+}
+
+header .navbar a:hover {
+  color: var(--orange);
+  transform: translateY(-3px);
+}
+
+section.smoothie h2.heading {
+  margin-top: 6rem;
+}
+section:not(:first-child) {
+  padding: 7% 7% 0.5r 7%; /* Applied specific padding settings for other children of sections */
+  margin-bottom: 0.5rem; /* Reduced the margin between sections */
+}
+section h2.heading {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: black;
+  font-style:normal;
+  font-family:sans-serif;
+}
+
+.box-container {
+  display: flex;
+  align-items: stretch; /* Ensure each box has the same height */
+  justify-content: center; /* Added equal space between each box */
+  flex-wrap: wrap;
+  margin-bottom: 1rem; /* Reduced the margin between box containers */
+}
+
+.box {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  background: #fff;
+  width: 25rem;
+  text-align: center;
+  display: flex; /* Added to use flexbox for the box */
+  flex-direction: column; /* Set flex direction to column */
+}
+
+/* Updated the bottom padding for each box */
+.box:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
+.box img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+}
+
+.box h3 {
+  font-size: 2.4rem;
+  color: black;
+  flex: 1; /* Use flex to allow the text to expand and fill the container */
+}
+
+.box .price {
+  font-size: 2rem;
+  color: #666;
+}
+
+.box .price span {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding-right: 0.5rem;
+  text-decoration: line-through;
+}
+.box .icons span{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.quantity-container {
+  text-align: center;
+}
+
+.quantity-container a {
+  font-size: 24px;
+}
+.quantity-box button {
+  font-size: 1.8rem;
+  padding: 0.3rem 0.6rem;
+}
+.icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.cart-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.quantity {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+#continueBtn {
+  display: none;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+}
+
+#continueBtn button {
+  background-color: white;
+  color: black;
+  padding: 15px 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+
+.navbar .links.show-menu {
+  left: 0;
+}
+
+#menu {
+  font-size: 3rem;
+  color: #666;
+  cursor: pointer;
+  padding: 1rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  display: none;
+}
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .content {
+    padding: 0;
+  }
+
+  #scroll-top {
+    bottom: 3rem;
+  }
+}
+
+@media (max-width: 788px) {
+  #menu {
+    display: block;
+  }
+header{
+ height: 6rem;
+}
+  header .logo img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 2rem;
+    right: 3%; /* Adjusted to move the menu to the right */
+    width: 80%;
+    background: #f9f9f9;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    z-index: 1000;
+    justify-content: flex-end; /* Align the menu to the right */
+  }
+
+  header .navbar.nav-toggle {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    color: black;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  #menu{
+    display: block;
+    color: black;
+    align-content: right;
+}
+  .heading {
+    font-size: 2rem; /* Adjusted the font size for the heading on smaller screens */
+  }
+
+  header .logo img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  header .navbar a {
+    font-size: 1.5rem; /* Adjusted the font size for the navbar links on even smaller screens */
+    color: black;
+  }
+}
+
