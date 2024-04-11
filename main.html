@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix N Muscle: Get your protein up</title>
+    <!-- lightGallery CSS -->
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/lightgallery/dist/css/lightgallery.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="./images/ShopLogo.png" type="icon">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"><img src="./images/ShopLogo.png" alt=""></a>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
+            <a href="#about">about</a>
+            <a href="#service">service</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <button class="login-btn" data-text="">LOG IN</button>
+        </nav>
+    </header>
+    <!-- header section ends -->
+
+    <!-- Login Section -->
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="loginEmail" class="login-email" required placeholder="email"
+                            autocapitalize="none">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="loginPassword" class="login-password" required
+                            placeholder="password">
+                    </div>
+                    <a href="forgetpass.html" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="signupName" class="signup-name" required placeholder="Enter your name"
+                            autocapitalize="none">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="signupEmail" class="signup-email" required placeholder="Enter your email"
+                            autocapitalize="none">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="signupPassword" class="signup-password" required
+                            placeholder="Create password">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="signupAddress" class="signup-address" required placeholder="Enter your address"
+                            autocapitalize="none">
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <a href="#" class="option">I agree to the Terms & Conditions</a>
+                    </div>
+                    <button type="submit" id="signupButton" class="signup-button">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account?
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <p id="mainText">At Mix N Muscle, our mission is to advocate for and encourage a healthy lifestyle through
+                the power of nutrition. We specialize in providing a diverse selection of products that are rich in
+                essential nutrients and protein.</p>
+            <p id="additionalText" style="display: none;">Our company is committed to delivering high-quality and
+                organic food options that not only taste great but also contribute to a well-balanced diet.</p>
+            <button id="discoverMoreBtn" onclick="toggleText()">Discover More</button>
+            <button id="showLessBtn" style="display: none;" onclick="toggleText()">Show Less</button>
+
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- product section starts  -->
+
+    <section class="product" id="product">
+
+        <h1 class="heading">Menu</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img onclick="window.location.href='product.html#smoothie'" src="./images/SmoothieMain.jpg" alt="">
+                <h3>Smoothie</h3>
+            </div>
+
+            <div class="box">
+                <img onclick="window.location.href='product.html#oats'" src="./images/ChocolateOats.jpg" alt="">
+                <h3>Oats</h3>
+            </div>
+
+            <div class="box">
+                <img onclick="window.location.href='product.html#sandwich'" src="./images/CornSandwich.jpg" alt="">
+                <h3>Sandwich</h3>
+            </div>
+
+            <div class="box">
+                <img onclick="window.location.href='product.html#shakes'" src="./images/BananaShake.jpg" alt="">
+                <h3>Shakes</h3>
+            </div>
+
+            <div class="box">
+                <img onclick="window.location.href='product.html#wrap'" src="./images/WrapMain.jpg" alt="">
+                <h3>Wrap</h3>
+            </div>
+
+            <div class="box">
+                <img onclick="window.location.href='product.html#others'" src="./images/GrilledPaneerSandwich.jpg"
+                    alt="">
+                <h3>Other Food Items</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- product section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">About us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="./images/about-img.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Why choose us?</h3>
+                <p>Welcome to Mix N Muscle! We are your one-stop shop for delicious and healthy protein-based
+                    breakfasts, as well as a variety of invigorating shakes and fresh juices. Our menu is crafted with
+                    the finest ingredients and is designed to not only satisfy your taste buds but also provide your
+                    body with the essential nutrients it needs.
+                </p>
+                <p>Our mission at Mix N Muscle is to promote a balanced and wholesome lifestyle. We are committed to
+                    offering a convenient and nutritious way to kick-start your day. Join us in our journey towards a
+                    healthier you, one delightful and energizing sip at a time.
+                </p>
+                <a href="#"><button class="btn">learn more</button></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- service section starts  -->
+
+    <section class="service" id="service">
+
+        <h1 class="heading">Our Services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-seedling"></i>
+                <h3>High-rich Protein Food</h3>
+                
+            </div>
+
+            <div class="box">
+                <i class="fas fa-award"></i>
+                <h3>high quality</h3>
+
+            </div>
+
+            <div class="box">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>fast delivery</h3>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-undo"></i>
+                <h3>easy returns</h3>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-calendar-check"></i>
+                <h3>subscription plan</h3>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24 x 7 support</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- service section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">people's review</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="info">
+                    <img src="./images/pic1.png" alt="">
+                    <div class="user">
+                        <h3>Vidhi</h3>
+                        <span>Student</span>
+                    </div>
+                </div>
+                <p>It is good and food is very delicious but I am impressed by there services as for a shop there
+                    services should be as good as there food with proper hygiene.</p>
+            </div>
+
+            <div class="box">
+                <div class="info">
+                    <img src="./images/pic2.png" alt="">
+                    <div class="user">
+                        <h3>Saral</h3>
+                        <span>Student</span>
+                    </div>
+                </div>
+                <p>I like there services as they deliver as there promise means deliver on time as if you want.</p>
+            </div>
+
+            <div class="box">
+                <div class="info">
+                    <img src="./images/pic3.png" alt="">
+                    <div class="user">
+                        <h3>Urvashi</h3>
+                        <span>Student</span>
+                    </div>
+                </div>
+                <p>First time when I order the food I was not sure that whether I will get food or not but I was impressed
+                    by there behavior and food taste. </p>
+            </div>
+
+            <div class="box">
+                <div class="info">
+                    <img src="./images/pic4.png" alt="">
+                    <div class="user">
+                        <h3>Sankit</h3>
+                        <span>Student</span>
+                    </div>
+                </div>
+                <p>As a student, consuming enough protein daily can help improve cognitive function and maintain energy levels. The nutritious combo not only fuels my studies but also keeps me energized and focused throughout the day.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">contact us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="./images/contact-img.jpg" alt="">
+            </div>
+
+            <form action="">
+
+                <div class="inputBox">
+                    <h3>Full name</h3>
+                    <input type="text" placeholder="enter your name">
+                </div>
+
+                <div class="inputBox">
+                    <h3>Email</h3>
+                    <input type="email" placeholder="enter your email">
+                </div>
+
+                <div class="inputBox">
+                    <h3>Number</h3>
+                    <input type="number" placeholder="enter your number">
+                </div>
+
+                <div class="inputBox">
+                    <h3>Message</h3>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                </div>
+
+                <input type="submit" value="send" class="btn">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./images/ShopLogo.png" alt="">
+                <p>Your go-to source for nutritious and delicious meals. Join us on the journey to a healthier lifestyle.</p>
+            </div>
+
+            <div class="box">
+                <h3>contact details</h3>
+                <p> <i class="fas fa-phone"></i> +91-9260932028 </p>
+                <p> <i class="fas fa-envelope"></i> shivsingh1309@gmail.com </p>
+                <p> <i class="fas fa-map-marker-alt"></i> LPU, Punjab, India </p>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#" class="fab fa-youtube"></a>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- scroll top  -->
+    <a href="#home" class="fas fa-arrow-up" id="scroll-top"></a>
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery/dist/js/lightgallery-all.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
